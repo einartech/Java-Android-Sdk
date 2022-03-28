@@ -37,7 +37,7 @@ public class IntersitialActivity extends AppCompatActivity {
     public void onClickloadInterstitial(View view) {
         TextView loadIntLogs  = (TextView) findViewById(R.id.LogsIntersitial);
         try{
-            tappxInterstitial  = new TappxInterstitial(getBaseContext(), "pub-64702-android-0194");
+            tappxInterstitial  = new TappxInterstitial(getBaseContext(), "pub-xxxx-android-xxxx");
             tappxInterstitial.setListener(setListeners.CreateInterstitialListener(loadIntLogs));
             tappxInterstitial.setAutoShowWhenReady(false);
             tappxInterstitial.loadAd(new AdRequest().useTestAds(true).setEndpoint("sdk1234test"));
