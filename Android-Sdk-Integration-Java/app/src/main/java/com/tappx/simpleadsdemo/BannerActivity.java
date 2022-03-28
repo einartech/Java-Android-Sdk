@@ -44,7 +44,7 @@ public class BannerActivity extends AppCompatActivity {
         bannerContainer = (ViewGroup) findViewById(R.id.banner_container);
         Context context = this;
         try {
-            banner = new TappxBanner(context, "pub-64702-android-0194");
+            banner = new TappxBanner(context, "pub-xxxxx-android-xxxx");
             banner.setListener(setListeners.CreateBannerListener(loadBanLogs));
 
             try {
