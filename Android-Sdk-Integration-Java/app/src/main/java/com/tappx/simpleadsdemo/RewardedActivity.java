@@ -66,7 +66,7 @@ public class RewardedActivity extends AppCompatActivity {
                     if (rewardedVideo != null) {
                     rewardedVideo.destroy();
                     }
-                rewardedVideo = new TappxRewardedVideo(this, "pub-64702-android-0194");
+                rewardedVideo = new TappxRewardedVideo(this, "pub-xxxx-android-xxxx");
                 rewardedVideo.loadAd(new AdRequest().useTestAds(true).setEndpoint("sdk1234test"));
                 rewardedVideo.setListener(setListeners.CreateRewardedVideoListener(loadRwdLogs));
                 TextView loadRwrdVText = (TextView) findViewById(R.id.Tappx_monster2);
