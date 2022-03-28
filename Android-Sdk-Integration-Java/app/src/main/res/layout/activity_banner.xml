@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".BannerActivity">
+
+    <TextView
+        android:id="@+id/LogsBanner"
+        android:layout_width="324dp"
+        android:layout_height="80dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:onClick="onClickloadInterstitial"
+        android:text="Logs : "
+        android:textColor="#D10F0F"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.975" />
+
+    <Button
+        android:id="@+id/LoadAndShowBanner"
+        android:layout_width="184dp"
+        android:layout_height="59dp"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:onClick="onClickloadAndshowBanner"
+        android:text="Load and Show"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.805" />
+
+    <LinearLayout
+        android:id="@+id/banner_container"
+        android:layout_width="373dp"
+        android:layout_height="254dp"
+        android:background="@color/black"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.535">
+
+        <ImageView
+            android:id="@+id/Tappx_logo"
+            android:layout_width="94dp"
+            android:layout_height="49dp"
+            app:srcCompat="@drawable/logo_letras_rojas_sin_slogan" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/banner_text"
+        android:layout_width="378dp"
+        android:layout_height="273dp"
+        android:gravity="center"
+        android:text="A web banner or BANNER ad is a form of advertising on the World Wide Web delivered by an ad server. This form of online advertising entails embedding an advertisement into a web page. It is intended to attract traffic to a website by linking to the website of the advertiser. In many cases, banners are delivered by a central ad server. Also we have the BANNER MREC ad is a highly prominent ad unit that typically sees higher than average click through rates.     The MREC is normally located above the fold on the right side of the page. Peel back. Peel back banners invite users to “peel” a website's homepage back and reveal the ad underneath."
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.034" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/Intersitial_to_MainActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="onClickFromBannerToMain"
+        app:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.703"
+        app:rippleColor="#FF0000"
+        app:srcCompat="@android:drawable/ic_delete" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

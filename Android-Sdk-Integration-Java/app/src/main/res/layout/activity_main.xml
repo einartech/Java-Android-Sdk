@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dip"
+    android:layout_marginBottom="10dip"
+    android:background="@android:color/white"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Main_Title"
+        android:layout_width="378dp"
+        android:layout_height="75dp"
+        android:gravity="center_horizontal"
+        android:shadowColor="@android:color/holo_green_light"
+        android:text="What type of ad would you like to receive?"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.062" />
+
+    <TextView
+        android:id="@+id/sdk_version"
+        android:layout_width="145dp"
+        android:layout_height="46dp"
+        android:gravity="center"
+        android:text="SDK Version"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.924" />
+
+    <TableLayout
+        android:id="@+id/AdTypes"
+        android:layout_width="377dp"
+        android:layout_height="394dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.635">
+
+        <TableRow
+            android:id="@+id/BannerWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="307dp"
+            android:layout_marginBottom="10dip"
+            android:gravity="center"
+            tools:layout_editor_absoluteX="-182dp"
+            tools:layout_editor_absoluteY="435dp">
+
+            <TextView
+                android:id="@+id/Banner"
+                android:layout_width="324dp"
+                android:layout_height="70dp"
+                android:background="@android:color/holo_red_dark"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:gravity="center|center_horizontal"
+                android:onClick="onClickBanner"
+                android:shadowColor="#673AB7"
+                android:text="Banner"
+                android:textColor="@color/white"
+                android:textSize="34sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/IntersitialWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dip"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/Interstitial"
+                android:layout_width="328dp"
+                android:layout_height="70dp"
+                android:background="@android:color/holo_red_dark"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:gravity="center|center_horizontal"
+                android:onClick="onClickInterstitial"
+                android:shadowColor="#000000"
+                android:text="Interstitial"
+                android:textColor="@color/white"
+                android:textSize="34sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/MrecWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginBottom="10dip"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/Mrec"
+                android:layout_width="328dp"
+                android:layout_height="70dp"
+                android:background="@android:color/holo_red_dark"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:gravity="center|center_horizontal"
+                android:onClick="onClickMrec"
+                android:shadowColor="#000000"
+                android:text="Mrec"
+                android:textColor="@color/white"
+                android:textSize="34sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/RewardedWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dip"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/Rewarded"
+                android:layout_width="328dp"
+                android:layout_height="70dp"
+                android:background="@android:color/holo_red_dark"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:gravity="center|center_horizontal"
+                android:onClick="onClickRewarded"
+                android:shadowColor="#000000"
+                android:text="Rewarded"
+                android:textColor="@color/white"
+                android:textSize="34sp" />
+        </TableRow>
+    </TableLayout>
+
+    <Switch
+        android:id="@+id/mobileOrTablet"
+        android:layout_width="328dp"
+        android:layout_height="25dp"
+        android:onClick="onSwitchDevice"
+        android:text="Type of Device?"
+        android:textColorHighlight="#FF0000"
+        android:textIsSelectable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.807"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.214" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="66dp"
+        android:layout_height="61dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/estados_tappix_05" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
